@@ -15,3 +15,10 @@ document.getElementById('fresnel-form').addEventListener('submit', function(even
         document.getElementById('fresnel-value').textContent = 'Por favor, introduce valores válidos.';
     }
 });
+
+document.getElementById('reset-button').addEventListener('click', function() {
+    document.getElementById('distance').value = '';
+    document.getElementById('frequency').value = '';
+    document.getElementById('result').style.display = 'none';
+    document.getElementById('result').classList.remove('show');
+});
