@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Zona de Fresnel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <img src="torre.png" alt="Torre de Comunicación" class="tower-background">
+    </div>
+    <div class="container">
+        <header class="header">
+            <h1>Calculadora de Zona de Fresnel</h1>
+        </header>
+        <form id="fresnel-form">
+            <label for="distance">Distancia (km):</label>
+            <input type="number" id="distance" step="any" placeholder="Ingrese la Distancia" required>
+
+            <label for="frequency">Frecuencia (GHz):</label>
+            <input type="number" id="frequency" step="any" placeholder="Ingrese la Frecuencia" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result" class="result" style="display: none;">
+            <p>La zona de Fresnel es de:</p>
+            <div class="result-box">
+                <span id="fresnel-value"></span> metros
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Creado por: Agostina Quevedo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
