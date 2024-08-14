@@ -171,3 +171,28 @@ footer {
     bottom: 20px;
     width: 100%;
 }
+
+.instructions {
+    background-color: #fff5e6;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+    display: none;
+}
+
+#toggleInstructions {
+    background-color: #ff9a9e;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+#toggleInstructions:hover {
+    background-color: #ff7e82;
+}

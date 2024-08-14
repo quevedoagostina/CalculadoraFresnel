@@ -18,12 +18,24 @@
         <header class="header">
             <h1>Calculadora de Zona de Fresnel</h1>
         </header>
+        
+        <button id="toggleInstructions">Abrir Instrucciones</button>
+
+        <div id="instructions" class="instructions">
+            <p><strong>Instrucciones:</strong></p>
+            <ol>
+                <li>Ingrese la distancia en kilómetros.</li>
+                <li>Ingrese la frecuencia en gigahertz.</li>
+                <li>Presione el botón "Calcular" para obtener el resultado.</li>
+            </ol>
+        </div>
+
         <form id="fresnel-form">
             <label for="distance">Distancia (km):</label>
-            <input type="number" id="distance" step="any" placeholder="Ingrese la Distancia" required>
+            <input type="number" id="distance" step="any" placeholder="Por ejemplo: 5" required>
 
             <label for="frequency">Frecuencia (GHz):</label>
-            <input type="number" id="frequency" step="any" placeholder="Ingrese la Frecuencia" required>
+            <input type="number" id="frequency" step="any" placeholder="Por ejemplo: 2.4" required>
 
             <button type="submit">Calcular</button>
         </form>
